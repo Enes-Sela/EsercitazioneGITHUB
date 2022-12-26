@@ -14,15 +14,6 @@ namespace EsercitazioneGITHUB
         internal int AnnoPubblicazione { get; set; }
         internal int NumeroPagine { get; set; }
 
-        internal Libro(string autore,string titolo,string editore,int annoPubblicazione,int numeroPagine) 
-        {
-            this.Autore = autore;
-            this.Titolo = titolo;
-            this.Editore = editore;
-            this.AnnoPubblicazione = annoPubblicazione;
-            this.NumeroPagine = numeroPagine;
-        }
-
         public string ToString(string autore, string titolo, string editore, int annoPubblicazione, int numeroPagine) 
         {
             return "Il libro è stato scritto da : " + autore + "\n" + "Il titolo del libro è : " + titolo + "\n" + "L'editore è : " + editore + "\n" + "Il libro è stato pubblicato nel : " + annoPubblicazione + "\n" + "Il libro ha : " + numeroPagine + "pagine";

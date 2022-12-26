@@ -15,13 +15,6 @@ namespace EsercitazioneGITHUB
         internal int OrarioApertura { get; set; }
         internal int OrarioChiusura { get; set; }
 
-        internal Biblioteca(string nomeBiblioteca,string indirizzo,int orarioApertura,int orarioChiusura) 
-        {
-            this.NomeBiblioteca = nomeBiblioteca;
-            this.Indirizzo = indirizzo;
-            this.OrarioApertura = orarioApertura;
-            this.OrarioChiusura = orarioChiusura;
-        }
 
         public void OperazioniLibro(Libro Autore,Libro Titolo,Libro Editore,Libro AnnoPubblicazione,Libro NumeroPagine) 
         {

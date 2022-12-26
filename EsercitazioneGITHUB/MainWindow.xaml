@@ -7,6 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="146*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="187*"/>
+            <ColumnDefinition Width="176*"/>
+            <ColumnDefinition Width="177*"/>
+            <ColumnDefinition Width="260*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Aggiungi Libro" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.498,0.541" Width="142" Height="45" Click="Aggiungi_Libro"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Margin="22,0,0,0" Grid.Row="1" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="122"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Margin="22,0,0,0" Grid.Row="2" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Margin="22,0,0,0" Grid.Row="3" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtAnnoPubblicazione" HorizontalAlignment="Left" Margin="22,10,0,0" Grid.Row="4" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNumeroPagine" HorizontalAlignment="Left" Margin="22,0,0,0" Grid.Row="5" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <Button x:Name="Aggiunta_Biblioteca" Content="Aggiungi Biblioteca" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="126" Height="45" Click="Aggiunta_Biblioteca_Click"/>
+        <TextBox x:Name="txtNomeBiblioteca" Grid.Column="1" HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="1" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtIndirizzo" Grid.Column="1" HorizontalAlignment="Left" Margin="25,0,0,0" Grid.Row="2" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtOrarioApertura" Grid.Column="1" HorizontalAlignment="Left" Margin="25,0,0,0" Grid.Row="3" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtOrarioChiusura" Grid.Column="1" HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="4" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Ricerca_Titolo" Content="Ricerca Titolo" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="126" Height="45" Click="Ricerca_Titolo_Click"/>
+        <TextBox x:Name="txtRicercaTitolo" Grid.Column="2" HorizontalAlignment="Left" Margin="25,0,0,0" Grid.Row="1" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtRicercaAutore" Grid.Column="3" HorizontalAlignment="Left" Margin="45,0,0,0" Grid.Row="1" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+        <TextBox x:Name="txtNumeroLibri" Grid.Column="3" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="240"/>
+        <Button x:Name="Ricerca_Autore" Content="Ricerca Autore" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="170" Height="45" Click="Ricerca_Autore_Click"/>
 
     </Grid>
 </Window>
